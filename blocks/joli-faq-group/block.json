@@ -1,0 +1,265 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "wpjoli/joli-faq-group",
+  "version": "0.1.0",
+  "title": "Joli FAQ Group",
+  "category": "widgets",
+  "icon": "testimonial",
+  "description": "Displays a group of FAQs",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "joli-faq-group",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "id": {
+      "type": "integer",
+      "default": 0
+    },
+    "accordion": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "open_first_question": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "open_all_questions": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "show_faq_group_name": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "show_faq_link": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "search_bar": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "search_placeholder": {
+      "type": "string"
+    },
+    "search_highlight_color": {
+      "type": "string"
+    },
+    "sort_by": {
+      "type": "string",
+      "enum": [
+        "editor-position",
+        "user-engagement",
+        "creation-date",
+        "alphabetical"
+      ]
+    },
+    "sort_order": {
+      "type": "string",
+      "enum": [
+        "asc",
+        "desc"
+      ]
+    },
+    "schema_faq": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "enable_emojis": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "flat_layout": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "theme": {
+      "type": "string",
+      "enum": [
+        "theme-1",
+        "theme-2",
+        "theme-3",
+        "theme-4"
+      ]
+    },
+    "disable_custom_styles": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "show_toggle": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "toggle_button_icon_style": {
+      "type": "string",
+      "enum": [
+        "toggle-1",
+        "toggle-2",
+        "toggle-3",
+        "toggle-4"
+      ]
+    },
+    "toggle_rotate_180": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "toggle_position": {
+      "type": "string",
+      "enum": [
+        "right",
+        "left"
+      ]
+    },
+    "toggle_size": {
+      "type": "string",
+      "enum": [
+        "xs",
+        "s",
+        "m",
+        "l"
+      ]
+    },
+    "toggle_border": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "toggle_background_shape": {
+      "type": "string",
+      "enum": [
+        "circle",
+        "rounded",
+        "square"
+      ]
+    },
+    "toggle_color": {
+      "type": "string"
+    },
+    "toggle_border_color": {
+      "type": "string"
+    },
+    "toggle_background_color": {
+      "type": "string"
+    },
+    "toggle_opened_color": {
+      "type": "string"
+    },
+    "toggle_opened_border_color": {
+      "type": "string"
+    },
+    "toggle_opened_background_color": {
+      "type": "string"
+    },
+    "questions_uppercase": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "questions_tag": {
+      "type": "string",
+      "enum": [
+        "div",
+        "p",
+        "span",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6"
+      ]
+    },
+    "questions_color": {
+      "type": "string"
+    },
+    "questions_background_color": {
+      "type": "string"
+    },
+    "questions_font_size": {
+      "type": "string"
+    },
+    "questions_font_weight": {
+      "type": "string",
+      "enum": [
+        "100",
+        "200",
+        "300",
+        "400",
+        "500",
+        "600",
+        "700",
+        "800",
+        "900",
+        "lighter",
+        "bolder"
+      ]
+    },
+    "questions_opened_color": {
+      "type": "string"
+    },
+    "questions_opened_background_color": {
+      "type": "string"
+    },
+    "questions_opened_font_size": {
+      "type": "answer_font_size"
+    },
+    "questions_opened_font_weight": {
+      "type": "string"
+    },
+    "answer_container_background_color": {
+      "type": "string"
+    },
+    "answer_background_color": {
+      "type": "string"
+    },
+    "answer_color": {
+      "type": "string"
+    },
+    "answer_font_size": {
+      "type": "string"
+    }
+  }
+}
